@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    name: springboot
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/springboot_shiro?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+
+
+  devtools:
+    livereload:
+      enabled: true
+      port: 35729
+    restart:
+      enabled: true
+
+  thymeleaf:
+    encoding: UTF-8
+    mode: LEGACYHTML5
+    cache: false
+
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: cn.maycope.entity
+  configuration:
+      map-underscore-to-camel-case: true
+
+
+logging:
+  level:
+    cn.tycoding.mapper: DEBUG
