@@ -116,7 +116,7 @@ public class HelloController {
 
 **展示**：
 
-![image-20200821105456543](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200821105456543.png)
+<img src="https://gitee.com/maycopes/MyImages/raw/master//images/image-20200821105456543.png">
 
 ### @ApiOperation
 
@@ -141,7 +141,7 @@ public class HelloController {
 
 **展示**：
 
-![image-20200821110256087](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200821110256087.png)
+<img src="https://gitee.com/maycopes/MyImages/raw/master//images/image-20200821110256087.png">
 
 ### @ApiImplicitParam
 
@@ -161,7 +161,7 @@ public class HelloController {
 
 **展示**：
 
-![image-20200821112255236](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200821112255236.png)
+<img src="https://gitee.com/maycopes/MyImages/raw/master//images/image-20200821112255236.png">
 
 > 实体类
 
@@ -202,7 +202,7 @@ public class Article {
 
 **展示**：
 
-![image-20200821140822136](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200821140822136.png)
+<img src= "https://gitee.com/maycopes/MyImages/raw/master//images/image-20200821140822136.png">
 
 
 
@@ -259,7 +259,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 首先我们需要知道对于`Swagger`来说，是必须要遵循`Resultful`的接口的规范，其实这些请求信息也就是我们平时使用到的几种类型，这里我们的`hello`接口来说，并没有具体设置`@PutMapping`或者`@PostMapping`,而是直接使用到了一个`@RequestMapping("/hello")`一下就可以看出来具体的请求情况，因为我们没有进行具体的指定操作，所以所有的请求都会有：见下图所示：
 
-![image-20200822102328071](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822102328071.png)
+<img src ="https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822102328071.png">
 
 对于具体请求的具体含义：
 
@@ -379,17 +379,17 @@ public enum ResultCode {
 
 首先还是熟悉的`SpringBoot`三层架构：
 
-![image-20200822105900915](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822105900915.png)
+<img src= "https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822105900915.png">
 
 首先对于我们的Swagger来说，在我们完成了基础的配置之后（完成了一个`config`配置外加一个接收请求的类之后，就可访问`http://localhost:8080/swagger-ui.html`）
 
-![image-20200822110144431](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822110144431.png)
+<img src= "https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822110144431.png">
 
 对于测试接口管理可以自行进行逻辑的增加，供大家自行学习使用。
 
 对于在上面写定的API注解，对应在图上的如下位置：
 
-![image-20200822111005431](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822111005431.png)
+<img src= "https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822111005431.png">
 
 对于我们的Swagger是如何来模拟我们的具体请求呢？是何如进行具体的操作呢？
 
@@ -397,19 +397,19 @@ public enum ResultCode {
 
 1. 点击`try it out`
 
-![image-20200822111214972](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822111214972.png)
+<img src="https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822111214972.png">
 
 2. 填写发送的请求信息：
 
-![image-20200822111423303](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822111423303.png)
+<img src="https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822111423303.png">
 
 3. 下拉当前页面，点击`Execute`
 
-![image-20200822111340423](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822111340423.png)
+<img src="https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822111340423.png">
 
 4. 查看自定义的返回信息
 
-![image-20200822111515176](https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822111515176.png)
+<img src="https://gitee.com/maycopes/MyImages/raw/master//images/image-20200822111515176.png">
 
 其中还有更多的请求信息，可以自定下载源码进行学习与掌握。
 
