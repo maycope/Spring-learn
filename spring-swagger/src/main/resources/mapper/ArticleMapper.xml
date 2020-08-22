@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.maycope.mapper.ArticleMapper">
+
+
+    <select id="getArticleById" parameterType="Long" resultType="cn.maycope.Entity.Article">
+        select * from article where id = #{id}
+    </select>
+    <delete id="deleteById" parameterType="Long">
+        delete from article where id = #{id}
+    </delete>
+
+    <insert id="increase">
+        insert into article(name,title,createTime) values (#{name},#{title},#{date})
+    </insert>
+    <select id="findByNameAndTitle" resultType="cn.maycope.Entity.Article">
+        select  * from article  where name = #{name} and title = #{title}
+    </select>
+    <select id="selectByName" parameterType="String" resultType="cn.maycope.Entity.Article">
+        select  * from article where name = #{name}
+    </select>
+    <update id="update">
+        update article set title =#{title},createTime=#{date} where name = #{name}
+    </update>
+</mapper>
